@@ -1,0 +1,46 @@
+ mkdir pixek-quest
+cd ./pixek-quest/
+vim game.txt
+echo "# pixel-quest" >> README.md
+git init
+git add README.md
+git status
+git commit -m "first commit"
+ git log
+git branch -M main
+git remote add origin https://github.com/gadb633-cpu/pixel-quest.git
+git push -u origin main
+git add game.txt
+git status
+git commit -m "game.txt"
+git log
+git push
+git pull
+ls
+cat game.txt
+ls
+git switch -c feature/player-menu
+ vim player-menu.txt
+git add player-menu.txt
+git status
+git commit -m "player-menu"
+git log
+git push
+git push --set-upstream origin feature/player-menu
+ls
+vim player-menu.txt
+git add player-menu.txt ; git commit -m "player menu description" ; git push
+git switch main
+git pull
+ls
+cat player-menu.txt
+vim setting.txt
+git add setting.txt ; git commit -m "setting.txt"
+git log
+git pull
+ls
+vim setting.txt
+vim setting.txt
+git add setting.txt ; git commit -m "fixed the conflict"
+git log
+git push
